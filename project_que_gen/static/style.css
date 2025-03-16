@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Container for all elements */
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/* Title and Subtitle Styling */
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 250px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.microphone-btn {
+    background-color: #28a745;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    width: 250px;
+    display: inline-block;
+}
+
+.microphone-btn:hover {
+    background-color: #218838;
+}
+
+/* Video Styling */
+.video-call-frame {
+    margin-top: 40px;
+}
+
+#video {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 12px;
+    background-color: #000;
+    display: none;
+    transition: opacity 1s ease;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Container Styling */
+.result-container {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.result-container h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.result-container p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Upload Section */
+.upload-container {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.upload-container input[type="file"] {
+    display: none;
+}
+
+.upload-container label {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.upload-container label:hover {
+    background-color: #0056b3;
+}
+
+.upload-container p {
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust container width and padding */
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    /* Adjust button width */
+    button, .microphone-btn {
+        width: 200px;
+    }
+
+    /* Video styling for smaller screens */
+    #video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Upload container adjustments */
+    .upload-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .upload-container label {
+        font-size: 16px;
+    }
+}
